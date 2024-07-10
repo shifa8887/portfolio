@@ -1,0 +1,234 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Baskervville SC", serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    margin-left: 50px;
+}
+.logo{
+    width: 200px;
+}
+.list-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.links:hover{
+    text-decoration: underline;
+    color: orange;
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lname{
+    color: rgb(215, 100, 33);
+}
+#user-details{
+    line-height: 1.2;
+}
+#download{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+}
+.home-img{
+    width: 45%;
+    height: 60%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 1s;
+}
+.home-img:hover #shape{
+    bottom: 70px;
+}
+.home-img:hover #girl{
+    left: 40%;
+}
+#about{
+    margin: 15% 8% 0 8%;
+}
+.section-head{
+    text-align: center;
+}
+.main-head{
+    font-size: 30px;
+}
+.sub-head{
+    font-size: 20px;
+    color: rgb(228, 122, 55);
+}
+.about-body{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    margin-top: 20px;
+}
+.about-img>img{
+    width: 80%;
+}
+.about-content{
+    font-size: 18px;
+    text-align: justify;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.info-box{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.info-box>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+.skill-contents{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    margin-top: 20px;
+    align-items: center;
+}
+.myskill{
+    width: 100%;
+}
+.bars{
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 1rem 0px;
+}
+.bar-head,.bar-percent{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.base-bar{
+    background-color: black;
+    height: 0.5rem;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.html-bar{
+    background-color: orange;
+    width: 90%;
+}
+.css-bar{
+    background-color: orange;
+    width: 83%;
+}
+.js-bar{
+    background-color: orange;
+    width: 79%;
+}
+.react-bar{
+    background-color: orange;
+    width: 75%;
+}
+#contact{
+    margin:8% 8%;
+}
+.icon-collections{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right,white,yellow,red,violet);
+}
+.brands{
+    color: black;
+    font-size: 30px;
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+    20%{
+        transform: rotate(-30deg);
+    }
+    40%{
+        transform: rotate(30deg);
+    }
+    60%{
+        transform: rotate(-30deg);
+    }
+    80%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(-30deg);
+    }
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.up-arrow{
+    float: right;
+    margin-top: -40px;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    border-radius: 10px;
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
